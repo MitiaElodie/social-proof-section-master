@@ -18,6 +18,40 @@ $white: hsl(0, 0%, 100%);
       min-height: 100vh;
       font-size: 15px;
       font-family: 'League Spartan', sans-serif;
+      line-height: 1.5em;
+   }
+
+   &__content {
+      margin: 20px;
+   }
+
+   &__review-container {
+      background-color: $very-dark-magenta;
+      color: $white;
+      border-radius: 5px;
+      padding: 30px;
+      margin-top: 15px;
+   }
+
+   &__profile-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+
+   &__person-img {
+      width: 40px;
+      border-radius: 100%;
+      margin-right: 20px;
+   }
+
+   &__person-details {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__person-status {
+      color: $soft-pink;
    }
 }
 

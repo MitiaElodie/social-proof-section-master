@@ -11,6 +11,34 @@
   min-height: 100vh;
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
+  line-height: 1.5em;
+}
+.social-proof__content {
+  margin: 20px;
+}
+.social-proof__review-container {
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 15px;
+}
+.social-proof__profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.social-proof__person-img {
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.social-proof__person-details {
+  display: flex;
+  flex-direction: column;
+}
+.social-proof__person-status {
+  color: hsl(333deg, 80%, 67%);
 }
 
 .attribution {
