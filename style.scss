@@ -53,6 +53,33 @@ $white: hsl(0, 0%, 100%);
    &__person-status {
       color: $soft-pink;
    }
+
+   &__person-name {
+      font-weight: 500;
+   }
+
+   &__rating-container {
+      background-color: $light-grayish-magenta;
+      color: $very-dark-magenta;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 20px;
+      text-align: center;
+   }
+
+   &__star-container{
+      display: flex;
+      justify-content: center;
+   }
+
+   &__star {
+      margin: 0px 5px;
+   }
+
+   &__rating-details {
+      margin-top: 10px;
+      font-weight: 700;
+   }
 }
 
 .attribution {

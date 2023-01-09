@@ -40,6 +40,28 @@
 .social-proof__person-status {
   color: hsl(333deg, 80%, 67%);
 }
+.social-proof__person-name {
+  font-weight: 500;
+}
+.social-proof__rating-container {
+  background-color: hsl(300deg, 24%, 96%);
+  color: hsl(300deg, 43%, 22%);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  text-align: center;
+}
+.social-proof__star-container {
+  display: flex;
+  justify-content: center;
+}
+.social-proof__star {
+  margin: 0px 5px;
+}
+.social-proof__rating-details {
+  margin-top: 10px;
+  font-weight: 700;
+}
 
 .attribution {
   font-size: 11px;
