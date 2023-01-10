@@ -23,9 +23,11 @@ $white: hsl(0, 0%, 100%);
          url('./images/bg-pattern-top-desktop.svg'),
          url('./images/bg-pattern-bottom-desktop.svg');
       background-repeat: no-repeat;
+      background-position: top left, bottom right;
    }
 
    &__content {
+      max-width: 1000px;
       margin: 20px;
    }
 
@@ -51,6 +53,7 @@ $white: hsl(0, 0%, 100%);
       display: flex;
       gap: 1em;
       flex-direction: column;
+      margin-top: 40px;
    }
 
    &__review-container {
@@ -90,13 +93,16 @@ $white: hsl(0, 0%, 100%);
       color: $very-dark-magenta;
       border-radius: 10px;
       margin-bottom: 15px;
-      padding: 20px;
-      text-align: center;
-   }
-
-   &__star-container{
+      padding: 15px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   &__star-container {
+      line-height: 0;
    }
 
    &__star {
@@ -104,7 +110,6 @@ $white: hsl(0, 0%, 100%);
    }
 
    &__rating-details {
-      margin-top: 10px;
       font-weight: 700;
    }
 }
@@ -114,7 +119,7 @@ $white: hsl(0, 0%, 100%);
    &__content {
       display: grid;
       gap: 1em;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr 3fr;
       grid-template-areas: 
          "title rating"
          "review review";
@@ -122,6 +127,7 @@ $white: hsl(0, 0%, 100%);
 
    &__title-container {
       grid-area: title;
+      max-width: 300px;
    }
 
    &__ratings-container {
@@ -131,6 +137,38 @@ $white: hsl(0, 0%, 100%);
    &__reviews-container {
       grid-area: review;
       flex-direction: row;
+      align-items: center;
+      gap: 25px;
+      margin-top: 0px;
+   }
+
+   &__rating-container {
+      flex-direction: row;
+      justify-content: normal;
+      gap: 20px;
+      max-width: 400px;
+
+      &--2 {
+         margin-left: 50px;
+      }
+
+      &--3 {
+         margin-left: 100px;
+      }
+   }
+
+   &__review-container {
+      &--2 {
+         margin-top: 30px;
+      }
+
+      &--3 {
+         margin-top: 60px;
+      }
+   }
+
+   &__title-container {
+      text-align: left;
    }
 }
 }
