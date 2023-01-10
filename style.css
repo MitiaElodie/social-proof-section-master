@@ -12,9 +12,23 @@
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
   line-height: 1.5em;
+  background: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
 }
 .social-proof__content {
   margin: 20px;
+}
+.social-proof__title-container {
+  text-align: center;
+  margin: 20px 0px;
+}
+.social-proof__title {
+  color: hsl(300deg, 43%, 22%);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.social-proof__details {
+  color: hsl(303deg, 10%, 53%);
+  font-weight: 500;
 }
 .social-proof__review-container {
   background-color: hsl(300deg, 43%, 22%);

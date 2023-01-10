@@ -19,10 +19,29 @@ $white: hsl(0, 0%, 100%);
       font-size: 15px;
       font-family: 'League Spartan', sans-serif;
       line-height: 1.5em;
+      background:
+         url('./images/bg-pattern-top-desktop.svg'),
+         url('./images/bg-pattern-bottom-desktop.svg');
    }
 
    &__content {
       margin: 20px;
+   }
+
+   &__title-container {
+      text-align: center;
+      margin: 20px 0px;
+   }
+
+   &__title {
+      color: $very-dark-magenta;
+      margin-bottom: 20px;
+      font-weight: 700;
+   }
+
+   &__details {
+      color: $dark-grayish-magenta;
+      font-weight: 500;
    }
 
    &__review-container {
