@@ -24,19 +24,25 @@
 }
 .social-proof__title {
   color: hsl(300deg, 43%, 22%);
+  font-size: 2.5em;
   margin-bottom: 20px;
   font-weight: 700;
+  line-height: 0.8;
 }
 .social-proof__details {
   color: hsl(303deg, 10%, 53%);
   font-weight: 500;
+}
+.social-proof__reviews-container {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
 }
 .social-proof__review-container {
   background-color: hsl(300deg, 43%, 22%);
   color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
   padding: 30px;
-  margin-top: 15px;
 }
 .social-proof__profile-container {
   display: flex;
@@ -78,6 +84,24 @@
   font-weight: 700;
 }
 
+@media screen and (min-width: 900px) {
+  .social-proof__content {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title rating" "review review";
+  }
+  .social-proof__title-container {
+    grid-area: title;
+  }
+  .social-proof__ratings-container {
+    grid-area: rating;
+  }
+  .social-proof__reviews-container {
+    grid-area: review;
+    flex-direction: row;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
